@@ -1,6 +1,6 @@
 <?php
-use GuzzleHttp\Client as Guzzle;
-use Mabasic\WakaTime\WakaTime as WakaTime;
+use \GuzzleHttp\Client as Guzzle;
+use \Mabasic\WakaTime\WakaTime as WakaTime;
 
 App::uses('Component', 'Controller');
 App::uses('WakaTimeComponent', 'WakaTime.Controller/Component');
