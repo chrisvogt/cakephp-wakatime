@@ -17,15 +17,11 @@ env:
 matrix:
   include:
     - php: 5.4
-      env:
-        - COVERALLS=1
+      env: COVERALLS=1
     - php: 5.4
-      env:
-        - PHPCS=1
-        - WAKATIME_API_KEY="5e8be62a-321d-41c2-b900-f1c1ed5e8d42"
+      env: PHPCS=1 WAKATIME_API_KEY='5e8be62a-321d-41c2-b900-f1c1ed5e8d42'
     - php: 5.4
-      env:
-        - FOC_VALIDATE=1
+      env: FOC_VALIDATE=1
 
 before_script:
   - git clone https://github.com/FriendsOfCake/travis.git --depth 1 ../travis
