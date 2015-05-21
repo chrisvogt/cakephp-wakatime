@@ -7,7 +7,7 @@ php:
 
 env:
   global:
-    - PLUGIN_NAME=Wysiwyg
+    - PLUGIN_NAME=WakaTime
     - REQUIRE=""
     - DB=mysql CAKE_VERSION=2.4
   matrix:
@@ -22,6 +22,7 @@ matrix:
     - php: 5.4
       env:
         - PHPCS=1
+        - WAKATIME_API_KEY="5e8be62a-321d-41c2-b900-f1c1ed5e8d42"
     - php: 5.4
       env:
         - FOC_VALIDATE=1
