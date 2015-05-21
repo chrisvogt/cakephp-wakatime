@@ -1,0 +1,10 @@
+<?php
+/**
+ * WakaTime Plugin example config
+ *
+ * @license MIT
+ * @link https://github.com/chrisvogt/cakephp-wakatime
+ */
+$config['wakatime'] = array(
+	'api_key' => '00000000-0000-0000-0000-000000000000'
+);
