@@ -16,6 +16,10 @@ use Mabasic\WakaTime\WakaTime as WakaTime;
 
 App::uses('Component', 'Controller');
 
+if (!class_exists('Mabasic\WakaTime\Wakatime')) {
+	require_once APP . 'vendor/mabasic/wakatime/src/WakaTime.php';
+}
+
 /**
  * WakaTime Component class
  *
