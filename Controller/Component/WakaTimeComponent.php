@@ -11,6 +11,10 @@
  * @link 					https://github.com/chrisvogt/cakephp-wakatime
  * @license 			http://www.opensource.org/licenses/mit-license.php MIT License
  */
+if (!class_exists('Mabasic\WakaTime\Wakatime')) {
+	require_once APP . 'vendors/autoload.php';
+}
+
 use GuzzleHttp\Client as Guzzle;
 use Mabasic\WakaTime\WakaTime as WakaTime;
 
