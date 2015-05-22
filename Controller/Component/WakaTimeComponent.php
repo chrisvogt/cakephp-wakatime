@@ -74,6 +74,10 @@ class WakaTimeComponent extends Component {
 		return true;
 	}
 
+	public function setApiKey($api_key) {
+		return $this->WakaTime->setApiKey($api_key);
+	}
+
 /**
  * currentUser
  *
