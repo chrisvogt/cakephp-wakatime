@@ -13,7 +13,7 @@
   "require": {
     "php": ">=5.4",
     "composer/installers": "*",
-    "mabasic/wakatime-php-api": "~1.1"
+    "mabasic/wakatime-php-api": "~1.0"
   },
   "support": {
     "email": "mail@chrisvogt.me",
