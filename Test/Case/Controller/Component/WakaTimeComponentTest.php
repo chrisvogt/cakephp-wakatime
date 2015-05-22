@@ -1,8 +1,6 @@
 <?php
-use \GuzzleHttp\Client as Guzzle;
-use \Mabasic\WakaTime\WakaTime as WakaTime;
-
-App::uses('Component', 'Controller');
+App::uses('ComponentCollection', 'Controller');
+App::uses('View', 'View');
 App::uses('WakaTimeComponent', 'WakaTime.Controller/Component');
 
 /**
@@ -37,7 +35,7 @@ class WakaTimeComponentTest extends CakeTestCase {
 	public function setUp() {
 		parent::setUp();
 
-		$this->WakaTime = new WakaTime(new Guzzle);
+		$this->WakaTime = new WakaTimeComponent(new ComponentCollection());
 		$this->init();
 		$this->project = 'cake-box';
 	}
@@ -75,7 +73,7 @@ class WakaTimeComponentTest extends CakeTestCase {
  * @return void
  */
 	public function testWakaTimeObjectType() {
-		$this->assertInstanceOf("Mabasic\WakaTime\WakaTime", $this->WakaTime);
+		$this->assertInstanceOf("WakaTimeComponent", $this->WakaTime);
 	}
 
 /**
