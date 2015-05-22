@@ -1,6 +1,6 @@
 {
   "name": "chrisvogt/cakephp-wakatime",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "CakePHP WakaTime web API consumer component.",
   "homepage": "https://github.com/chrisvogt/cakephp-wakatime",
   "license": "MIT",
